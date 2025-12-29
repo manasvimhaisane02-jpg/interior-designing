@@ -1,0 +1,122 @@
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: #fafafa;
+    color: #333;
+}
+
+
+header {
+    background: linear-gradient(120deg, #2b2b2b, #4b4b4b);
+    color: white;
+    padding: 45px 20px;
+    text-align: center;
+    animation: fadeDown 1.2s ease;
+}
+
+header h1 {
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #111;
+    animation: fadeUp 1s ease;
+}
+
+nav a {
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    background: #c9a14a;
+    color: black;
+    transform: translateY(-2px);
+}
+
+
+.container {
+    display: flex;
+    gap: 30px;
+    padding: 40px;
+}
+
+
+.card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    overflow: hidden;
+    flex: 1;
+    animation: fadeIn 1.2s ease;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+}
+
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.card-content {
+    padding: 22px;
+}
+
+.card h2, .card h3 {
+    color: #c9a14a;
+    margin-bottom: 10px;
+}
+
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    animation: fadeUp 1s ease;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 25px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
